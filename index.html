@@ -16,7 +16,22 @@
 </head>
 <body>
 
-  Home
+  <header class="header">
+    <img class="logo" src="./assets/images/logo.svg" width="45" height="28" alt="News logo">
+    <button class="open-btn" type="button" aria-expanded="false" aria-controls="menu-list" aria-label="Open Menu"><img src="./assets/images/icon-menu.svg" width="40" height="17" alt=""></button>
+    <nav id="menu-list" class="nav nav-show">
+      <button class="close-btn" type="button" aria-label="Close Menu"><img src="./assets/images/icon-menu-close.svg" width="30" height="30" alt=""></button>
+      <ul class="nav__list" role="list">
+        <li class="nav__list-item"><a class="nav__link" href="#home">Home</a></li>
+        <li class="nav__list-item"><a class="nav__link" href="#new">New</a></li>
+        <li class="nav__list-item"><a class="nav__link" href="#popular">Popular</a></li>
+        <li class="nav__list-item"><a class="nav__link" href="#trending">Trending</a></li>
+        <li class="nav__list-item"><a class="nav__link" href="#categories">Categories</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home
   New
   Popular
   Trending
@@ -50,7 +65,7 @@
 
   03
   The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
+  How the pandemic has sparked fresh opportunities. -->
   
   <script src="scripts/script.js"></script>
 </body>
