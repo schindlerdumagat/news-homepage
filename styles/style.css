@@ -155,9 +155,23 @@ body {
   margin-inline-end: auto;
 }
 
+.open-btn, .close-btn {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
 .close-btn {
   margin-inline-start: auto;
   margin-block-end: var(--space-1100);
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: var(--clr-navy-950);
+  opacity: 0.5;
 }
 
 .nav {
@@ -173,11 +187,17 @@ body {
   padding-block: var(--space-300);
   padding-inline-start: clamp(1.3125rem, 0.4179rem + 3.8168vw, 2.25rem);
   padding-inline-end: clamp(1.3125rem, -2.2061rem + 15.0127vw, 5rem);
+  z-index: 2;
 }
 
 .nav-show {
   right: 0;
 }
+
+.nav-show ~ .overlay {
+  display: block;
+}
+
 
 .nav__list {
   display: flex;
